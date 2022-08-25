@@ -2,13 +2,18 @@
 - hosts: all
   gather_facts: false
 
+  vars:
+    - snow_username: username
+    - snow_password: password
+    - snow_url: instance_url
+
   tasks:
 
   - name: create a ticket in SNOW
     snow_record:
-      username: "{{ username }}"
-      password: "{{ password }}"
-      instance: "{{ instance_url }}"
+      username: "{{ snow_username }}"
+      password: "{{ snow_password }}"
+      instance: "{{ snow_url }}"
       state: present
       data:
         short_description: "This is a test opened by Ansible"
