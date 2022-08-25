@@ -6,9 +6,9 @@
 
   - name: create a ticket in SNOW
     snow_record:
-      username: "{{ SNOW_username }}"
-      password: "{{ SNOW_password }}"
-      instance: "{{ SNOW_instance }}"
+      username: "{{ username }}"
+      password: "{{ password }}"
+      instance: "{{ instance_url }}"
       state: present
       data:
         short_description: "This is a test opened by Ansible"
