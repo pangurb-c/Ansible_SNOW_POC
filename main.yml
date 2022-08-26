@@ -12,10 +12,6 @@
 
   tasks:
 
-  - name: check variables
-    debug:
-      msg: "{{ snow_url }}"
-
   - name: create a ticket in SNOW
     snow_record:
       username: "{{ snow_username }}"
