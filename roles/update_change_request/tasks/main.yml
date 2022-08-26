@@ -9,4 +9,4 @@
       password: "{{ snow_password }}"
     state: assess
     assignment_group: some.group
-    number: CHG0000001
+    number: "{{ ticket_num }}"
