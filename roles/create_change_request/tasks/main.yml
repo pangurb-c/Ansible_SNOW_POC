@@ -19,7 +19,4 @@
 - name: save change request number
   set_fact:
     ticket_num: "{{ change_ticket.record.number }}"
-
-- name: output var
-  debug:
-    msg: "{{ ticket_num }}"
+    
