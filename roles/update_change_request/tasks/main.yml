@@ -1,2 +1,12 @@
 ---
 # tasks file for update_change_request
+
+- name: Change state of the change request
+  servicenow.itsm.change_request:
+    instance:
+      host: "{{ snow_url }}"
+      username: "{{ snow_username }}"
+      password: "{{ snow_password }}"
+    state: assess
+    assignment_group: some.group
+    number: CHG0000001

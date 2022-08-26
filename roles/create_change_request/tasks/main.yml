@@ -1,7 +1,5 @@
 ---
-# tasks file for create_change_request
-
-- name: create a change_request
+- name: create a change request
   servicenow.itsm.change_request:
     instance:
       host: "{{ snow_url }}"
@@ -15,3 +13,9 @@
     priority: moderate
     risk: low
     impact: low
+  register: change_ticket
+
+
+- name: save change request number
+  debug:
+    msg: "{{ change_ticket }}"

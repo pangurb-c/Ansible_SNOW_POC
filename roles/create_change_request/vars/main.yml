@@ -1,6 +1,4 @@
 ---
-# vars file for create_change_request
-
 snow_username: '{{ lookup("env", "SNOW_USERNAME") }}'
 snow_password: '{{ lookup("env", "SNOW_PASSWORD") }}'
 snow_url: '{{ lookup("env", "SNOW_INSTANCE") }}'
