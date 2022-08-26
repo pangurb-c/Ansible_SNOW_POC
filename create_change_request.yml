@@ -5,9 +5,9 @@
   collections: 
     - servicenow.itsm
 
-  tasks:
+  tasks: 
 
   - name: create a change change_request
-    include_role:
+    import_role:
       - create_change_request
     
