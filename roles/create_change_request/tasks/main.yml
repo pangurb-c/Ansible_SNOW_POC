@@ -15,8 +15,8 @@
     impact: low
   register: change_ticket
 
-
+  
 - name: save change request number
   set_fact:
     ticket_num: "{{ change_ticket.record.number }}"
-    
+
