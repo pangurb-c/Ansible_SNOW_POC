@@ -5,7 +5,7 @@
   vars:
     - snow_username: '{{ lookup("env", "SNOW_USERNAME") }}'
     - snow_password: '{{ lookup("env", "SNOW_PASSWORD") }}'
-    - snow_url: '{{ lookup("env", "SNOW_INSTANCE) }}'
+    - snow_url: '{{ lookup("env", "SNOW_INSTANCE") }}'
 #    - snow_username: admin
 #    - snow_password: H9HA9tgvp@M%
 #    - snow_url: dev107597
