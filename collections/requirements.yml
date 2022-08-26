@@ -1,0 +1,4 @@
+collections:
+  - name: servicenow.servicenow
+    version: 1.0.9
+    source: https://galaxy.ansible.com/servicenow/servicenow
