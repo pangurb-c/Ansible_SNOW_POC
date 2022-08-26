@@ -26,16 +26,4 @@
       priority: moderate
       risk: low
       impact: low
-
-  # - name: create a ticket in SNOW
-  #   servicenow.servicenow.snow_record:
-  #     username: "{{ snow_username }}"
-  #     password: "{{ snow_password }}"
-  #     instance: "{{ snow_url }}"
-  #     state: present
-  #     data:
-  #       short_description: "This is a test opened by Ansible"
-  #       priority: 2
-  #     table: change_request
-  #   register: new_change_request
     
