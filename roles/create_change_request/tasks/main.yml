@@ -1,7 +1,7 @@
 ---
 # tasks file for create_change_request
 
-- name: create a change change_request
+- name: create a change_request
   servicenow.itsm.change_request:
     instance:
       host: "{{ snow_url }}"
