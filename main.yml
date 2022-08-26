@@ -9,13 +9,13 @@
 
   collections: 
     - servicenow.itsm
-    
+
   tasks:
 
   - name: create a change change_request
     servicenow.itsm.change_request:
       instance:
-        host: https://"{{ snow_url }}".service-now.com
+        host: "{{ snow_url }}"
         username: "{{ snow_username }}"
         password: "{{ snow_password }}"
       type: standard
