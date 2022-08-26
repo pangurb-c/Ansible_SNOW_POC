@@ -3,9 +3,9 @@
   gather_facts: false
 
   vars:
-    - snow_username: username
-    - snow_password: password
-    - snow_url: instance_url
+    - snow_username: admin
+    - snow_password: H9HA9tgvp@M%
+    - snow_url: dev107597
 
   tasks:
 
