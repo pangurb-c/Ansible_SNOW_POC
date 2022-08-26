@@ -2,28 +2,12 @@
 - hosts: all
   gather_facts: false
 
-  vars:
-    - snow_username: '{{ lookup("env", "SNOW_USERNAME") }}'
-    - snow_password: '{{ lookup("env", "SNOW_PASSWORD") }}'
-    - snow_url: '{{ lookup("env", "SNOW_INSTANCE") }}'
-
   collections: 
     - servicenow.itsm
 
   tasks:
 
   - name: create a change change_request
-    servicenow.itsm.change_request:
-      instance:
-        host: "{{ snow_url }}"
-        username: "{{ snow_username }}"
-        password: "{{ snow_password }}"
-      type: standard
-      state: new
-      requested_by: "{{ snow_username }}"
-      short_description: automated change request
-      description: change request automated by ansible
-      priority: moderate
-      risk: low
-      impact: low
+    include_role:
+      - create_change_request
     
