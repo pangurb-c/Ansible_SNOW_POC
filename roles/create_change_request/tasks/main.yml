@@ -18,4 +18,4 @@
 
 - name: save change request number
   debug:
-    msg: "{{ change_ticket }}"
+    msg: "{{ change_ticket.record.number }}"
