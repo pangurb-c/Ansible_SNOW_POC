@@ -3,9 +3,9 @@
   gather_facts: false
 
   vars:
-    - snow_username: USERNAME
-    - snow_password: PASSWORD
-    - snow_url: INSTANCE_URL
+    - snow_username: '{{ lookup("env", "USERNAME") }}'
+    - snow_password: '{{ lookup("env", "PASSWORD") }}'
+    - snow_url: '{{ lookup("env", "INSTANCE_URL) }}'
 #    - snow_username: admin
 #    - snow_password: H9HA9tgvp@M%
 #    - snow_url: dev107597
