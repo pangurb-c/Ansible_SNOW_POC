@@ -10,7 +10,7 @@
   tasks:
 
   - name: create a ticket in SNOW
-    servicenow.servicenow.snow_record:
+    servicenow.snow_record:
       username: "{{ snow_username }}"
       password: "{{ snow_password }}"
       instance: "{{ snow_url }}"
