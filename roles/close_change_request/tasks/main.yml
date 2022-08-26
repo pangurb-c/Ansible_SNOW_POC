@@ -11,5 +11,5 @@
     close_code: "successful"
     close_notes: "Closed by automation"
     assignment_group: some.group
-    number: "{{ change_ticket }}"
+    number: "{{ ticket_num }}"
     
