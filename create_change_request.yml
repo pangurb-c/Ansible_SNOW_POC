@@ -5,6 +5,6 @@
   collections: 
     - servicenow.itsm
 
-  include_roles:
-      - create_change_request
+  roles:
+    - create_change_request
     
