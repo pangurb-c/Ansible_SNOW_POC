@@ -7,7 +7,7 @@
       host: "{{ snow_url }}"
       username: "{{ snow_username }}"
       password: "{{ snow_password }}"
-    state: closed
+    state: canceled
     close_code: "successful"
     close_notes: "Closed by automation"
     assignment_group: software
