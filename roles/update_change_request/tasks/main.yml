@@ -7,6 +7,6 @@
       host: "{{ snow_url }}"
       username: "{{ snow_username }}"
       password: "{{ snow_password }}"
-    state: in_progress
+    state: implement
     assignment_group: software
     number: "{{ ticket_num }}"
