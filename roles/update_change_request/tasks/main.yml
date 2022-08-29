@@ -10,3 +10,23 @@
     state: scheduled
     assignment_group: software
     number: "{{ ticket_num }}"
+
+- name: Change state of the change request
+  servicenow.itsm.change_request:
+    instance:
+      host: "{{ snow_url }}"
+      username: "{{ snow_username }}"
+      password: "{{ snow_password }}"
+    state: implement
+    assignment_group: software
+    number: "{{ ticket_num }}"
+
+- name: Change state of the change request
+  servicenow.itsm.change_request:
+    instance:
+      host: "{{ snow_url }}"
+      username: "{{ snow_username }}"
+      password: "{{ snow_password }}"
+    state: review
+    assignment_group: software
+    number: "{{ ticket_num }}"
