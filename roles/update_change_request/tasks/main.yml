@@ -1,7 +1,7 @@
 ---
 # tasks file for update_change_request
 
-- name: Change state of the change request
+- name: Schedule change request
   servicenow.itsm.change_request:
     instance:
       host: "{{ snow_url }}"
@@ -11,7 +11,7 @@
     assignment_group: software
     number: "{{ ticket_num }}"
 
-- name: Change state of the change request
+- name: Implement change request
   servicenow.itsm.change_request:
     instance:
       host: "{{ snow_url }}"
@@ -21,7 +21,7 @@
     assignment_group: software
     number: "{{ ticket_num }}"
 
-- name: Change state of the change request
+- name: Review change request
   servicenow.itsm.change_request:
     instance:
       host: "{{ snow_url }}"
