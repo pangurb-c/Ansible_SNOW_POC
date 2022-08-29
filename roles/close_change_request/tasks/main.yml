@@ -10,6 +10,6 @@
     state: closed
     close_code: "successful"
     close_notes: "Closed by automation"
-    assignment_group: some.group
+    assignment_group: software
     number: "{{ ticket_num }}"
     
