@@ -13,7 +13,7 @@
     priority: moderate
     risk: low
     impact: low
-    assignment_group: software.group
+    assignment_group: software
   register: change_ticket
 
   
