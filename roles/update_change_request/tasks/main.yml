@@ -8,5 +8,5 @@
       username: "{{ snow_username }}"
       password: "{{ snow_password }}"
     state: assess
+    assignment_group: software
     number: "{{ ticket_num }}"
-    
