@@ -1,0 +1,32 @@
+---
+# tasks file for update_change_request
+
+- name: Schedule change request
+  servicenow.itsm.change_request:
+    instance:
+      host: "{{ snow_url }}"
+      username: "{{ snow_username }}"
+      password: "{{ snow_password }}"
+    state: scheduled
+    assignment_group: software
+    number: "{{ ticket_num }}"
+
+- name: Implement change request
+  servicenow.itsm.change_request:
+    instance:
+      host: "{{ snow_url }}"
+      username: "{{ snow_username }}"
+      password: "{{ snow_password }}"
+    state: implement
+    assignment_group: software
+    number: "{{ ticket_num }}"
+
+- name: Review change request
+  servicenow.itsm.change_request:
+    instance:
+      host: "{{ snow_url }}"
+      username: "{{ snow_username }}"
+      password: "{{ snow_password }}"
+    state: review
+    assignment_group: software
+    number: "{{ ticket_num }}"

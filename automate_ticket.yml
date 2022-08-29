@@ -1,0 +1,11 @@
+---
+- hosts: all
+  gather_facts: false
+
+  collections: 
+    - servicenow.itsm
+
+  roles:
+    - create_change_request
+    - update_change_request
+    - close_change_request
